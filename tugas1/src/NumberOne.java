@@ -3,11 +3,11 @@ public class NumberOne {
     private static class math {
 
         public static int penjumlahan(int x, int y) {
-            return x + y;
+            return Math.addExact(x, y);
         }
 
         public static int pengurangan(int x, int y) {
-            return x - y;
+            return Math.subtractExact(x, y);
         }
 
         public static  int perpangkatan(int x, int y) {
@@ -19,11 +19,11 @@ public class NumberOne {
         }
 
         public static int pembagian(int x, int y) {
-            return x / y;
+            return Math.floorDiv(x, y);
         }
 
         public static int perkalian(int x, int y) {
-            return x * y;
+            return Math.multiplyExact(x, y);
         }
     }
 
@@ -37,6 +37,6 @@ public class NumberOne {
         System.out.println("pengakaran dari " + x + " adalah " + math.pengakaran(x));
         System.out.println("pengakaran dari " + y + " adalah " + math.pengakaran(y));
         System.out.println("pembagian dari " + x + " dan " + y + " adalah " + math.pembagian(x, y));
-        System.out.println("pembagian dari " + x + " dan " + y + " adalah " + math.perkalian(x, y));
+        System.out.println("perkalian dari " + x + " dan " + y + " adalah " + math.perkalian(x, y));
     }
 }
