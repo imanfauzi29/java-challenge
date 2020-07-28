@@ -4,17 +4,11 @@ public class NumberFive {
         public static String rating(int x) {
             String result;
 
-            if(x >= 20) {
-                result = "DEWASA";
-            }else if(x >= 13) {
-                result = "REMAJA";
-            }else if(x >= 9) {
-                result = "BIMBINGAN ORANG TUA";
-            }else if (x < 9) {
-                result = "SEMUA USIA";
-            }else {
-                result = "MASUKAN ANGKA";
-            }
+            if(x >= 20) result = "DEWASA";
+            else if(x >= 13) result = "REMAJA";
+            else if(x >= 9) result = "BIMBINGAN ORANG TUA";
+            else if (x < 9) result = "SEMUA USIA";
+            else result = "MASUKAN ANGKA";
 
             return result;
         }
